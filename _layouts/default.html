@@ -4,16 +4,13 @@
   {% include head.html %}
 
   <body>
+    {% include preloader.html %}
+    {% include navigation.html %}
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+    {{ content }}
 
     {% include footer.html %}
+    {% include scripts.html %}
 
   </body>
 
