@@ -2,13 +2,15 @@
 
 <footer>
 <div class="footer">
-  <a class="link" href="#">Sitemap</a>
-  <span class="link">|</span>
-  <a class="link" href="#">Application</a>
-  <span class="link">|</span>
-  <a class="link" href="#">Get in touch</a>
-  <span class="link">|</span>
-  <a class="link" href="http://themeforest.net/item/park-hotel-landing-accommodation-template/11512670">Buy me now</a>
+	{% assign pages = site.pages | sort:"weight"  %}
+	{% for p in pages %}
+      {% if p.layout == 'default' %}
+      	<a class="link" href="{{ p.url }}">{{ p.title }}</a>
+      	{% if p.title != 'Contacto' %}
+  			<span class="link">|</span>
+  		{% endif %}
+      {% endif %}
+  	{% endfor %}
 </div>
 <div class="copyright">
   <span>&copy;</span>Copyright In Water Grows <span>2015</span>

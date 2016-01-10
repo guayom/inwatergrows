@@ -1,42 +1,28 @@
 <!-- Navigation start -->
-
 <div class="menu-wrap nano">
   <nav class="menu nano-content">
   <div class="icon-list">
-    <a href="multi_index_left_bar.html" class="logo"><img src="/images/logo.png" alt="logo"/></a>
-    <a class="navicon" href="multi_about_left_bar.html"><button class="button--itzel dark">
-    <i class="button__icon icon-tourism-icons_anchor"></i>
-    <span>About Parkhotel</span>
-    </button></a>
-    <a class="navicon" href="multi_accommodation_left_bar.html"><button class="button--itzel dark">
-    <i class="button__icon icon-tourism-icons_hotel-building"></i>
-    <span>Accommondation</span>
-    </button></a>
-    <a class="navicon" href="multi_gallery_left_bar.html"><button class="button--itzel dark">
-    <i class="button__icon icon-tourism-icons_hand-lamp"></i>
-    <span>Gallery</span>
-    </button></a>
-    <a class="navicon" href="multi_news_left_bar.html"><button class="button--itzel dark">
-    <i class="button__icon icon-tourism-icons_anchor"></i>
-    <span>News</span>
-    </button></a>
-    <a class="navicon" href="multi_testimonials_left_bar.html"><button class="button--itzel dark">
-    <i class="button__icon icon-tourism-icons_compass"></i>
-    <span>Testimonials</span>
-    </button></a>
-    <a class="navicon" href="multi_contact_left_bar.html"><button class="button--itzel dark">
-    <i class="button__icon icon-tourism-icons_id-card"></i>
-    <span>Contact</span>
-    </button></a>
+    <a href="/" class="logo"><img src="/images/logo.png" alt="logo"/></a>
+
+    {% for p in site.pages %}
+      {% if p.layout == 'default' %}
+      <a class="navicon" href="{{ p.url }}">
+        <button class="button--itzel dark">
+          <i class="button__icon icon-tourism-icons_anchor"></i>
+          <span>{{ p.title }}</span>
+        </button>
+      </a>
+      {% endif %}
+    {% endfor %}
+
     <p class="conctact">
-       Fell free to call right now <br>
-      <span class="phone">+1 111 222 111</span><br>
-      <span class="phone">+1 111 222 111</span>
+       Llamanos <br>
+      <span class="phone"><a href="tel:{{ site.telefono }}">{{ site.telefono }}</a></span><br>
     </p>
     <p class="socials">
-      <a href="#" class="fa fa-facebook fa-lg"></a>
-      <a href="#" class="fa fa-skype fa-lg"></a>
-      <a href="#" class="fa fa-google fa-lg"></a>
+      {% for red in site.social %}
+        <a href="{{ red.url }}" class="fa fa-{{ red.title }} fa-lg"></a>
+      {% endfor %}
     </p>
     <div class="gap">
     </div>

@@ -1,0 +1,17 @@
+---
+layout: default
+title: Hidroponía
+weight: 2
+---
+<div class="allcontent">
+	<h2>Ventajas de los productos hidropónicos​</h2>
+	{{ site.data.hidroponia.ventajas }}
+	<div class="row">
+	{% for beneficio in site.beneficios %}
+		<div class="col-xs-4">
+			<h2>{{ beneficio.title }}</h2>
+			{{ beneficio.output }}
+		</div>
+	{% endfor %}
+	</div>
+</div>
