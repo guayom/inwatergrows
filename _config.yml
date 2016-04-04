@@ -9,9 +9,9 @@
 title: In Water Grows
 email: info@iwg.cr
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Somos una empresa costarricense dedicada a la producción responsable de vegetales hidrológicos.
+
+  Nacimos gracias a la creciente tendencia y demanda que existe en el país de alimentos mucho más sanos, libres de químicos, producidos con agua potable, con procesos de cosecha y empaque con estándares de inocuidad equivalentes a los de una cocina de alto nivel. Esto se logra mediante la utilización de las mejores y más eficientes prácticas agrícolas, tal como se llevan a cabo en países desarrollados. Es por todas estas razones que hemos sido seleccionados por las mejores cadenas de supermercados y de restaurantes para suplir su demanda de vegetales. Porque sabemos lo importante que es comer bien vamos a seguir innovando y aumentando nuestra cartera de productos.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: jekyllrb
@@ -29,4 +29,6 @@ direccion: "Heredia, Costa Rica"
 
 social:
  - title: facebook
-   url: '#'
+   url: 'https://www.facebook.com/inwatergrows'
+ - title: instagram
+   url: 'https://www.instagram.com/inwatergrows'
