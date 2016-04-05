@@ -1,11 +1,40 @@
+$azul: #3eadff;
 .contact_form{
   margin: 0 auto 50px auto;
 }
 .page_header{
+  background-position: fixed;
   &.la-finca{
     background:url(../images/gallery/052web.jpg);
   }
   &.hidroponia{
     background:url(../images/gallery/052web.jpg);
   }
+  &.productos{
+    background:url(../images/gallery/108web.jpg);
+  }
+}
+.contenidos{
+  h2{
+    color: $azul;
+    text-align: center;
+  }
+  ul.centered{
+    list-style: none;
+    text-align: center;
+  }
+  .list-leaf{
+    list-style: none;
+    margin: none;
+    padding: 0;
+    i{
+      color: #888;
+    }
+    li{
+      color: #888;
+    }
+  }
+}
+.producto-img{
+  margin-bottom: 20px;
 }

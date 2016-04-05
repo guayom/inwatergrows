@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Contacto
-weight: 4
+weight: 5
 ---
 <div id="contact_menu">
   <div class="contact">
@@ -21,11 +21,12 @@ weight: 4
     <!--<div id="map"></div>-->
     <div class="contact_form">
       <h4>Escribinos</h4>
-      <form id="contact_form" action="#">
+      <form id="contact_form" action="http://formspree.io/info@iwgcr.com" method="POST">
         <input name="first_name" type="text" placeholder="Nombre">
         <input name="last_name" type="text" placeholder="Apellido">
-        <input name="email" type="email" placeholder="Email">
+        <input name="_replyto" type="email" placeholder="Email">
         <input name="telephone" type="tel" placeholder="Teléfono">
+        <input type="text" name="_gotcha" style="display:none" />
         <textarea placeholder="Mensaje" form="contact_form" name="message" class="make_a_reservation_message"></textarea>
         <input type="submit" value="Enviar" class="accordion_button" role="button">
         <div class="clear">

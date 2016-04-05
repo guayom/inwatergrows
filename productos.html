@@ -1,0 +1,30 @@
+---
+layout: default
+title: Productos
+weight: 4
+image: 029web.jpg
+---
+<div class="page_header productos">
+  <div class="gap"></div>
+  <div class="title_center">
+    <div class="center_line">
+    </div>
+    <p class=" wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+       {{ page.title }}
+    </p>
+  </div>
+  <div class="center_line wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+  <div class="gap"></div>
+</div>
+
+<div class="gap"></div>
+
+<div class="container contenidos">
+  {% for producto in site.data.productos.normales %}
+    <div class="col-md-3">
+      <img src="/images/productos/{{ producto }}" class="img-responsive producto-img" />
+    </div>
+  {% endfor %}
+</div>
+
+<div class="gap"></div>
