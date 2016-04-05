@@ -3,4 +3,57 @@ layout: default
 title: Contacto
 weight: 4
 ---
-Hola
+<div id="contact_menu">
+  <div class="contact">
+    <div class="gap">
+    </div>
+    <div class="title_center ">
+      <div class="center_line wow fadeInLeft">
+      </div>
+      <p class=" wow fadeIn">
+         Contacto
+      </p>
+    </div>
+    <div class="center_line wow fadeInRight">
+    </div>
+    <div class="mini_gap">
+    </div>
+    <!--<div id="map"></div>-->
+    <div class="contact_form">
+      <h4>Escribinos</h4>
+      <form id="contact_form" action="#">
+        <input name="first_name" type="text" placeholder="Nombre">
+        <input name="last_name" type="text" placeholder="Apellido">
+        <input name="email" type="email" placeholder="Email">
+        <input name="telephone" type="tel" placeholder="Teléfono">
+        <textarea placeholder="Mensaje" form="contact_form" name="message" class="make_a_reservation_message"></textarea>
+        <input type="submit" value="Enviar" class="accordion_button" role="button">
+        <div class="clear">
+        </div>
+        <div id="contactMsgc">
+        </div>
+      </form>
+    </div>
+    <div class="contact_information">
+      <h6>
+      In Water Grows
+      </h6>
+      <p>
+        <span class="texticon fa fa-home"></span>{{ site.direccion }}<br>
+      </p>
+    </div>
+    <div class="contact_information">
+      <p>
+        <span class="texticon fa fa-comment"></span>Para dudas y comentarios, escribinos por medio de nuesro formulario o escribinos a:<br>
+        <span class="texticon fa fa-envelope"></span> {{ site.email }}<br>
+        <span class="texticon fa fa-phone"></span> {{ site.telefono }}
+      </p>
+
+      {% for link in site.social %}
+        <a href="{{ link.url }}" class="contact_icon fa fa-{{ link.title }}"></a>
+      {% endfor %}
+    </div>
+    <div class="mini_gap">
+    </div>
+  </div>
+</div>

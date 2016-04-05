@@ -2,10 +2,36 @@
 layout: default
 title: Hidroponía
 weight: 2
+image: 058web.jpg
 ---
+<div class="page_header hidroponia">
+  <div class="gap"></div>
+  <div class="title_center">
+    <div class="center_line">
+    </div>
+    <p class=" wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+       {{ page.title }}
+    </p>
+  </div>
+  <div class="center_line wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+  <div class="gap"></div>
+</div>
+
+<div class="news_row">
+  <div class="centred">
+    <div class="news_description">
+      <h3>Ventajas de los productos hidropónicos​</h3>
+      <p>
+        {{ site.data.hidroponia.ventajas }}
+      </p>
+    </div>
+  </div>
+  <div class="news_image" style="background-image: url('/images/gallery/medium/{{ page.image }}')">
+  </div>
+</div>
+
 <div class="allcontent">
-	<h2>Ventajas de los productos hidropónicos​</h2>
-	{{ site.data.hidroponia.ventajas }}
+  <div class="gap"></div>
 	<div class="row">
 	{% for beneficio in site.beneficios %}
 		<div class="col-xs-4">
@@ -15,3 +41,4 @@ weight: 2
 	{% endfor %}
 	</div>
 </div>
+<div class="gap"></div>

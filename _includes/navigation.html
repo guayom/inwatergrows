@@ -1,10 +1,10 @@
-<!-- Navigation start -->
 <div class="menu-wrap nano">
   <nav class="menu nano-content">
   <div class="icon-list">
     <a href="/" class="logo"><img src="/images/logo.png" alt="logo"/></a>
 
-    {% for p in site.pages %}
+    {% assign pages = site.pages | sort:"weight"  %}
+    {% for p in pages %}
       {% if p.layout == 'default' %}
       <a class="navicon" href="{{ p.url }}">
         <button class="button--itzel dark">
@@ -31,5 +31,3 @@
   <button class="close-button" id="close-button">Close Menu</button>
 </div>
 <button class="menu-button" id="open-button">Open Menu</button>
-
-<!-- Navigation end -->
