@@ -46,7 +46,7 @@ normales:
       - perejil_nacional3.jpg
       - perejil_nacional4.jpg
       - perejil_nacional5.jpg
-      - 099.jpg
+      #- 099.jpg
 
 hierbas_en_maceta:
   - title: Albahaca
@@ -55,7 +55,7 @@ hierbas_en_maceta:
       - 014.jpg
       - 019.jpg
   - title: Romero
-    image: 019.jpg
+    image: 017.jpg
     images:
       - 014.jpg
       - 019.jpg
