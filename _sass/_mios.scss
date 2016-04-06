@@ -200,6 +200,9 @@ h1, h2, h3, h4, .title-center, .details{
       font-family:'MinionPro-Bold';
     }
   }
+  h3{
+    font-family:'MinionPro-Bold';
+  }
 }
 #modal-carousel{
   .carousel-inner > .item > a > img, .carousel-inner > .item > img{
@@ -210,4 +213,7 @@ h1, h2, h3, h4, .title-center, .details{
   border: 0;
   padding: 0;
   border-radius:0;
+}
+.modal-content{
+  background:rgba(255,255,255,0.5);
 }
