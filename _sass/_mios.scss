@@ -2,9 +2,13 @@ $azul: #3eadff;
 $azul2: #07538e;
 $verde: #469648;
 
+body{
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  font-weight: regular;
+  color: #888;
+}
 
 h1, h2, h3, h4, .title-center, .details{
-  font-family: 'AvantGardeITCbyBT-Demi';
 }
 .contact_form{
   margin: 0 auto 50px auto;
@@ -63,6 +67,9 @@ h1, h2, h3, h4, .title-center, .details{
     color: white;
     font-size: 4em;
     margin-top: 70px;
+    text-transform: uppercase;
+  }
+  h3{
   }
   .description-bg{
     background:rgba(0,0,0,0.7);
@@ -72,17 +79,23 @@ h1, h2, h3, h4, .title-center, .details{
     position: absolute;
     bottom: 50px;
     left: 50px;
+    h3{
+      text-transform: uppercase;
+    }
   }
 }
 
 .hidroponia{
   h2{
     color: $verde;
+    text-transform: uppercase;
   }
   h3{
     color: black;
     text-align: center;
+    text-transform: uppercase;
   }
+
   .division{
     position: relative;
     &:after{
@@ -130,6 +143,13 @@ h1, h2, h3, h4, .title-center, .details{
     text-align: center;
     color: white;
     text-transform: uppercase;
-    font-family: 'avantgarde_bk_btdemi';
   }
+}
+.footer{
+  .link{
+    font-size: 12px;
+  }
+ .copyright{
+   font-size: 12px !important;
+ }
 }
