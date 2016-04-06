@@ -36,11 +36,11 @@ $(function()
                 easing: "easeInOutQuad"
             }), !1
         })
-    }), $(function()
+    })/*, $(function()
     {
     	"use strict";
         $(".nano").nanoScroller()
-    }),
+    })*/,
     function()
     {
     	"use strict";

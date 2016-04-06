@@ -1,10 +1,6 @@
 /*jshint browser: true, strict: true, undef: true */
 /*global define: false */
 
-setTimeout(function() {
-  $('.nano').nanoScroller();
-}, 1000);
-
 (function() {
 		"use strict";
 	var bodyEl = document.body,
