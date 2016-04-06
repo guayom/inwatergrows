@@ -208,6 +208,9 @@ h1, h2, h3, h4, .title-center, .details{
   .carousel-inner > .item > a > img, .carousel-inner > .item > img{
     margin: 0 auto;
   }
+  img{
+    max-height: 500px;
+  }
 }
 .thumbnail.producto-img{
   border: 0;
