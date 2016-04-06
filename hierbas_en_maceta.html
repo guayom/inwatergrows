@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Productos
-weight: 4
+title: Hierbas en Maceta
+weight: 5
 image: 029web.jpg
-permalink: /productos/
+permalink: /hierbas-en-maceta/
 ---
 <div class="clearfix productos-header" style="background-image: url(/images/gallery/{{ page.image }});">
   <div class="gap"></div>
@@ -16,9 +16,10 @@ permalink: /productos/
 <div class="gap"></div>
 
 <div class="container contenidos">
-  {% for producto in site.data.productos.normales %}
+  {% for producto in site.data.productos.hierbas_en_maceta %}
     <div class="col-md-3">
-      <img src="/images/productos/{{ producto.image }}" class="img-responsive producto-img" />
+      <img src="/images/maceta/{{ producto.image }}" class="img-responsive producto-img" />
+      <!--<div class="title">{{ producto.title }}</div>-->
     </div>
   {% endfor %}
 </div>

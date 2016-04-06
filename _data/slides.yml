@@ -1,0 +1,29 @@
+- title: Nuestra Finca
+  btn-text: Conoce más sobre nuestra finca
+  btn-link: /finca
+  imagen: arbol.jpg
+
+- title: Albahaca
+  btn-text: Ver más Productos
+  btn-link: /productos
+  imagen: albahaca5.jpg
+
+- title: Arúgula
+  btn-text: Ver más Productos
+  btn-link: /productos
+  imagen: arugula4.jpg
+
+- title: Baby Leaves
+  btn-text: Ver más Productos
+  btn-link: /productos
+  imagen: 087web.jpg
+
+- title: Lechuga Freeze
+  btn-text: Ver más Productos
+  btn-link: /productos
+  imagen: 034web.jpg
+
+- title: Perejil Nacional
+  btn-text: Ver más Productos
+  btn-link: /productos
+  imagen: perejil_nacional3.jpg

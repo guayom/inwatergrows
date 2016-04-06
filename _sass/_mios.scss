@@ -1,4 +1,10 @@
 $azul: #3eadff;
+$azul2: #07538e;
+$verde: #469648;
+
+h2{
+  font-family: 'AvantGardeITCbyBT-Demi';
+}
 .contact_form{
   margin: 0 auto 50px auto;
 }
@@ -16,8 +22,11 @@ $azul: #3eadff;
 }
 .contenidos{
   h2{
-    color: $azul;
+    color: $azul2;
     text-align: center;
+    small{
+      color: $azul2;
+    }
   }
   ul.centered{
     list-style: none;
@@ -37,4 +46,89 @@ $azul: #3eadff;
 }
 .producto-img{
   margin-bottom: 20px;
+}
+.custom_header{
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  h1{
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    margin-top: 70px;
+  }
+  .description-bg{
+    background:rgba(0,0,0,0.7);
+    padding: 20px;
+    color: #fff;
+    margin: 50px;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+  }
+}
+
+.hidroponia{
+  h2{
+    color: $verde;
+  }
+  h3{
+    color: black;
+    text-align: center;
+  }
+  .division{
+    position: relative;
+    &:after{
+      position: absolute;
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: 3px;
+      width: 1px;
+      height: 150px;
+      background:#000;
+    }
+    &.double:after{
+      height: 220px !important;
+    }
+  }
+  ul{
+    padding: 17px;
+    li{
+      margin:0;
+    }
+  }
+}
+.division-azul{
+  border-left: 1px solid $azul2;
+  margin-bottom: 50px;
+}
+.navicon{
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0 5px;
+  display: inline-block;
+  margin-bottom: 8px;
+  &:hover{
+    color: #666;
+  }
+}
+.productos-header{
+  width: 100%;
+  height: 300px;
+  background-position: bottom;
+
+  h1{
+    font-size: 4em;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    
+  }
 }

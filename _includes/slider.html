@@ -1,43 +1,26 @@
 <!-- Slider start -->
-
 <header id="home_slider" class="home_slider_top carousel slide">
 <div class="carousel-inner carousel-touch">
-  <div class="item active">
-    <!-- Set the first background image using inline CSS below. -->
-    <div class="fill" style="background-image:url('/images/gallery/029web.jpg');">
-    </div>
-    <div class="fill_mask">
-      <div class="description">
-        <h2 class="details wow fadeInUp">
-          <a href="/" class="logo"><img src="/images/logo.png" alt="logo"/></a>
-        </h2>
+  {% for slide in site.data.slides %}
+    <div class="item{% if forloop.index == 1 %} active{% endif %}">
+      <div class="fill" style="background-image:url('/images/slides/{{ slide.imagen }}');"></div>
+      <div class="fill_mask">
+        <div class="description">
+          <img class="deco wow fadeInDown" src="/images/logo-vaciado.png" alt="In Water Grows"/>
+          <br/>
+          <h2 class="details wow fadeInUp">{{ slide.title }}</h2>
+          <div class="buttons wow fadeInDown">
+            <a href="{{ slide.btn-link }}">
+            <button class="button--itzel">
+            <i class="button__icon fa fa-arrow-right"></i>
+            <span>{{ slide.btn-text }}</span>
+            </button>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="item">
-    <!-- Set the first background image using inline CSS below. -->
-    <div class="fill" style="background-image:url('/images/gallery/087web.jpg');">
-    </div>
-    <div class="fill_mask">
-      <div class="description">
-        <h2 class="details wow fadeInUp">
-          <a href="/" class="logo"><img src="/images/logo.png" alt="logo"/></a>
-        </h2>
-      </div>
-    </div>
-  </div>
-  <div class="item">
-    <!-- Set the first background image using inline CSS below. -->
-    <div class="fill" style="background-image:url('/images/gallery/034web.jpg');">
-    </div>
-    <div class="fill_mask">
-      <div class="description">
-        <h2 class="details wow fadeInUp">
-          <a href="/" class="logo"><img src="/images/logo.png" alt="logo"/></a>
-        </h2>
-      </div>
-    </div>
-  </div>
+  {% endfor %}
 </div>
 <a class="left_arrow" href="#home_slider" data-slide="prev">
 <svg width="26px" height="48">

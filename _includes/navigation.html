@@ -5,14 +5,15 @@
 
     {% assign pages = site.pages | sort:"weight"  %}
     {% for p in pages %}
-      {% if p.layout == 'default' %}
-      <a class="navicon" href="{{ p.url }}">
-        <button class="button--itzel dark">
-          <i class="button__icon fa fa-leaf"></i>
-          <span>{{ p.title }}</span>
-        </button>
-      </a>
-      {% endif %}
+      {% unless p.weight == 0 %}
+        {% if p.layout == 'default'%}
+        <a class="navicon" href="{{ p.url }}">
+
+            {{ p.title }}
+
+        </a>
+        {% endif %}
+      {% endunless %}
     {% endfor %}
 
     <p class="conctact">
@@ -21,7 +22,7 @@
     </p>
     <p class="socials">
       {% for red in site.social %}
-        <a href="{{ red.url }}" class="fa fa-{{ red.title }} fa-lg"></a>
+        <a href="{{ red.url }}" class="fa fa-{{ red.title }} fa-lg" target="_blank"></a>
       {% endfor %}
     </p>
     <div class="gap">

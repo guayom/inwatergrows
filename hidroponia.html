@@ -3,42 +3,93 @@ layout: default
 title: Hidroponía
 weight: 2
 image: 058web.jpg
+permalink: /hidroponia/
 ---
-<div class="page_header hidroponia">
-  <div class="gap"></div>
-  <div class="title_center">
-    <div class="center_line">
-    </div>
-    <p class=" wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
-       {{ page.title }}
-    </p>
-  </div>
-  <div class="center_line wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
-  <div class="gap"></div>
-</div>
-
-<div class="news_row">
-  <div class="centred">
-    <div class="news_description">
-      <h3>Ventajas de los productos hidropónicos​</h3>
-      <p>
-        {{ site.data.hidroponia.ventajas }}
-      </p>
-    </div>
-  </div>
-  <div class="news_image" style="background-image: url('/images/gallery/medium/{{ page.image }}')">
+<div class="custom_header clearfix" style="background-image: url(/images/gallery/{{ page.image }});">
+  <h1>{{ page.title }}</h1>
+  <div class="description-bg col-xs-12 col-md-6">
+    <h3>Ventajas de los productos hidropónicos​</h3>
+    <p>{{ site.data.hidroponia.ventajas }}</p>
   </div>
 </div>
 
-<div class="allcontent">
-  <div class="gap"></div>
+<div class="gap"></div>
+
+<div class="allcontent hidroponia">
 	<div class="row">
-	{% for beneficio in site.beneficios %}
-		<div class="col-xs-4">
-			<h2>{{ beneficio.title }}</h2>
-			{{ beneficio.output }}
+		<div class="col-xs-12">
+			<h2>Sistema de Producción</h2>
 		</div>
-	{% endfor %}
+    <div class="col-xs-12">
+      <div class="row">
+        <div class="col-xs-4 division double">
+          <h3>Inocuidad</h3>
+          <ul>
+            <li>No hay contaminación por la tierra o el suelo</li>
+            <li>Uso de agua potable</li>
+            <li>Empaque con bolsa</li>
+          </ul>
+        </div>
+        <div class="col-xs-4 division double">
+          <h3>Oxo-Biodegradable</h3>
+          <ul>
+            <li>Uso eficiente y adecuado de agroquímicos</li>
+            <li>Producción en ambientes protegidos, lo cual implica MENOS USO de agroquímicos.</li>
+            <li>Al no estar en contacto con el suelo se disminuye la incidencia por plagas y enfermedades.</li>
+          </ul>
+        </div>
+        <div class="col-xs-4">
+          <h3>Menor riesgo de contaminación por babosas</h3>
+          <ul>
+            <li>Se produce en camas, por ende el cultivo está a 1 metros sobre el suelo.</li>​
+            <li>No contacto con el suelo.​</li>
+            <li>Se usan barreras físicas entre el cultivo y el suelo.</li>
+            <li>Controles culturales de la plaga con trampas y medidas preventivas.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12">
+      <h2>Uso eficiente de los recursos naturales</h2>
+    </div>
+    <div class="col-xs-12">
+      <div class="row">
+        <div class="col-xs-4 division">
+          <h3>Sistema de riego re-circulante</h3>
+          <ul>
+      ​​      <li>Uso más eficiente del agua y de los insumos.</li>
+            <li>Se consume un 90% menos de agua que las producciones convencionales.</li>
+          </ul>
+        </div>
+        <div class="col-xs-4 division">
+          <h3>Eficiencia en el uso del espacio:</h3>
+          <ul>
+            <li>Más producción por metro cuadrado de terreno.</li>
+          </ul>
+        </div>
+        <div class="col-xs-4">
+          <h3>Menos daño ambiental:</h3>
+          <ul>
+            <li>No hay erosión de suelo.</li>
+            <li>No hay contaminación del suelo por fertilizantes.</li>
+            <li>Menos uso de agroquímicos.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12">
+      <h2>Vida Pos-Cosecha</h2>
+    </div>
+    <div class="col-xs-12">
+      <ul>
+        <li>Mantienen por más tiempo su calidad después de su cosecha.​</li>
+        <li>Mayor vida en refrigeración.​​</li>
+      </ul>
+    </div>
+
 	</div>
 </div>
+
 <div class="gap"></div>
