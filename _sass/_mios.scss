@@ -91,6 +91,18 @@ h1, h2, h3, h4, .title-center, .details{
     }
   }
 }
+@media (max-width: 990px) {
+  .custom_header {
+    .description-bg {
+      bottom: 0;
+      left: 0;
+      margin: 0;
+    }
+  }
+  .hidroponia h2{
+    text-align: center;
+  }
+}
 
 .hidroponia{
   h2{
