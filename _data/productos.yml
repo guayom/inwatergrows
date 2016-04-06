@@ -50,26 +50,26 @@ normales:
 
 hierbas_en_maceta:
   - title: Albahaca
-    image: albahaca.jpg
+    image: 019.jpg
     images:
       - 014.jpg
       - 019.jpg
   - title: Romero
-    image: romero.jpg
+    image: 019.jpg
     images:
       - 014.jpg
       - 019.jpg
   - title: Hierbabuena
-    image: hierbabuena.jpg
+    image: 015.jpg
     images:
       - 015.jpg
       - 048.jpg
   - title: Orégano
-    image: oregano.jpg
+    image: 020.jpg
     images:
       - 001.jpg
       - 020.jpg
   - title: Tomillo
-    image: tomillo.jpg
+    image: 016.jpg
     images:
       - 016.jpg
