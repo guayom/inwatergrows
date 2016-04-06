@@ -120,6 +120,9 @@ h1, h2, h3, h4, .title-center, .details{
     &.double:after{
       height: 220px !important;
     }
+    h3{
+      font-family:'MinionPro-Bold';
+    }
   }
   ul{
     padding: 17px;
@@ -165,4 +168,17 @@ h1, h2, h3, h4, .title-center, .details{
 }
 .fonter{
   font-family: 'avantgarde_bk_btdemi';
+}
+.minion{
+  font-family:'MinionPro-Regular';
+  h2{
+    font-family:'MinionPro-Regular';
+    strong{
+      font-size: 1.3em;
+      font-family:'MinionPro-Bold';
+    }
+    small{
+      font-family:'MinionPro-Bold';
+    }
+  }
 }
