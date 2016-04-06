@@ -1,16 +1,40 @@
 normales:
   - title: Albahaca
     image: albahaca1.jpg
+    images:
+      - albahaca2.jpg
+      - albahaca3.jpg
+      - albahaca4.jpg
+      - albahaca5.jpg
+      - albahaca6.jpg
   - title: Arúgula
     image: arugula1.jpg
+    images:
+      - arugula2.jpg
+      - arugula3.jpg
+      - arugula4.jpg
   - title: Baby Leaves
     image: baby_leaves1.jpg
+    images:
+      - baby_leaves2.jpg
+      - baby_leaves3.jpg
+      - baby_leaves4.jpg
   - title: Cebollino
     image: cebollino1.jpg
+    images:
+      - cebollino2.jpg
   - title: Perejil Italiano
     image: perejil_italiano1.jpg
+    images:
+      - perejil_italiano2.jpg
+      - perejil_italiano3.jpg
   - title: Perejil Nacional
     image: perejil_nacional1.jpg
+    images:
+      - perejil_nacional2.jpg
+      - perejil_nacional3.jpg
+      - perejil_nacional4.jpg
+      - perejil_nacional5.jpg
 
 hierbas_en_maceta:
   - title: Albahaca

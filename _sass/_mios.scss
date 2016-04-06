@@ -91,6 +91,13 @@ h1, h2, h3, h4, .title-center, .details{
     }
   }
 }
+
+.carousel-control.left,.carousel-control.right{
+  background-image:none;
+  margin-top:10%;
+  width:5%;
+}
+
 @media (max-width: 990px) {
   .custom_header {
     .description-bg {
@@ -192,5 +199,10 @@ h1, h2, h3, h4, .title-center, .details{
     small{
       font-family:'MinionPro-Bold';
     }
+  }
+}
+#modal-carousel{
+  .carousel-inner > .item > a > img, .carousel-inner > .item > img{
+    margin: 0 auto;
   }
 }
