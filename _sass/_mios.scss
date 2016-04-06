@@ -4,11 +4,13 @@ $verde: #469648;
 
 body{
   font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
-  font-weight: regular;
+  font-weight: 400;
   color: #888;
 }
 
 h1, h2, h3, h4, .title-center, .details{
+  color: #000;
+  font-family: 'avantgarde_bk_btdemi';
 }
 .contact_form{
   margin: 0 auto 50px auto;
@@ -68,8 +70,10 @@ h1, h2, h3, h4, .title-center, .details{
     font-size: 4em;
     margin-top: 70px;
     text-transform: uppercase;
+    font-family: 'avantgarde_bk_btdemi';
   }
   h3{
+    font-family: 'avantgarde_bk_btdemi';
   }
   .description-bg{
     background:rgba(0,0,0,0.7);
@@ -79,8 +83,11 @@ h1, h2, h3, h4, .title-center, .details{
     position: absolute;
     bottom: 50px;
     left: 50px;
+    font-weight: 400;
     h3{
       text-transform: uppercase;
+      color: #fff;
+      font-family: 'avantgarde_bk_btdemi';
     }
   }
 }
@@ -89,11 +96,13 @@ h1, h2, h3, h4, .title-center, .details{
   h2{
     color: $verde;
     text-transform: uppercase;
+    font-family: 'avantgarde_bk_btdemi';
   }
   h3{
     color: black;
     text-align: center;
     text-transform: uppercase;
+    font-family: 'avantgarde_bk_btdemi';
   }
 
   .division{
@@ -143,6 +152,7 @@ h1, h2, h3, h4, .title-center, .details{
     text-align: center;
     color: white;
     text-transform: uppercase;
+    font-family: 'avantgarde_bk_btdemi';
   }
 }
 .footer{
@@ -152,4 +162,7 @@ h1, h2, h3, h4, .title-center, .details{
  .copyright{
    font-size: 12px !important;
  }
+}
+.fonter{
+  font-family: 'avantgarde_bk_btdemi';
 }
