@@ -17,7 +17,7 @@ permalink: /productos/
 
 <div class="container contenidos">
   {% for producto in site.data.productos.normales %}
-    <div class="col-md-3">
+    <div class="col-md-4">
       <a title="{{ producto.title }}" href="#">
         <img src="/images/productos/{{ producto.image }}" id="image-{{ forloop.index }}" class="thumbnail img-responsive producto-img" />
       </a>

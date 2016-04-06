@@ -7,22 +7,33 @@ normales:
       - albahaca4.jpg
       - albahaca5.jpg
       - albahaca6.jpg
+      - 045.jpg
+      - 094.jpg
   - title: Arúgula
     image: arugula1.jpg
     images:
       - arugula2.jpg
       - arugula3.jpg
       - arugula4.jpg
+      - 089.jpg
+      - 101.jpg
+      - 103.jpg
+      - 108.jpg
   - title: Baby Leaves
     image: baby_leaves1.jpg
     images:
       - baby_leaves2.jpg
       - baby_leaves3.jpg
       - baby_leaves4.jpg
+      - 072.jpg
+      - 078.jpg
+      - 085.jpg
+      - 110.jpg
   - title: Cebollino
     image: cebollino1.jpg
     images:
       - cebollino2.jpg
+      - 036.jpg
   - title: Perejil Italiano
     image: perejil_italiano1.jpg
     images:
@@ -35,15 +46,30 @@ normales:
       - perejil_nacional3.jpg
       - perejil_nacional4.jpg
       - perejil_nacional5.jpg
+      - 099.jpg
 
 hierbas_en_maceta:
   - title: Albahaca
     image: albahaca.jpg
+    images:
+      - 014.jpg
+      - 019.jpg
   - title: Romero
     image: romero.jpg
+    images:
+      - 014.jpg
+      - 019.jpg
   - title: Hierbabuena
     image: hierbabuena.jpg
+    images:
+      - 015.jpg
+      - 048.jpg
   - title: Orégano
     image: oregano.jpg
+    images:
+      - 001.jpg
+      - 020.jpg
   - title: Tomillo
     image: tomillo.jpg
+    images:
+      - 016.jpg
