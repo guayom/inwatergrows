@@ -22,16 +22,16 @@ permalink: /contacto/
     <!--<div id="map"></div>-->
     <div class="contact_form">
       <h4>Escribinos</h4>
-      <form id="contact_form" action="http://formspree.io/info@iwgcr.com" method="POST">
+      <form action="http://formspree.io/info@iwgcr.com" method="POST">
         <input name="first_name" type="text" placeholder="Nombre">
         <input name="last_name" type="text" placeholder="Apellido">
         <input name="_replyto" type="email" placeholder="Email">
         <input name="telephone" type="tel" placeholder="Teléfono">
         <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_next" value="/gracias/" />
         <textarea placeholder="Mensaje" form="contact_form" name="message" class="make_a_reservation_message"></textarea>
         <input type="submit" value="Enviar" class="accordion_button" role="button">
-        <div class="clear">
-        </div>
+        <div class="clear"></div>
         <div id="contactMsgc">
         </div>
       </form>
@@ -50,7 +50,6 @@ permalink: /contacto/
         <span class="texticon fa fa-envelope"></span> {{ site.email }}<br>
         <span class="texticon fa fa-phone"></span> {{ site.telefono }}
       </p>
-
       {% for link in site.social %}
         <a href="{{ link.url }}" class="contact_icon fa fa-{{ link.title }}"></a>
       {% endfor %}
