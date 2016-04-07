@@ -52,13 +52,15 @@ hierbas_en_maceta:
   - title: Albahaca
     image: 019.jpg
     images:
-      - 014.jpg
       - 019.jpg
+      - 014.jpg
+
   - title: Romero
     image: 017.jpg
     images:
-      - 014.jpg
-      - 019.jpg
+      - 006.jpg
+      - 017.jpg
+      - 049.jpg
   - title: Hierbabuena
     image: 015.jpg
     images:
