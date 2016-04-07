@@ -34,6 +34,13 @@ normales:
     images:
       - cebollino2.jpg
       - 036.jpg
+  - title: Lechuga Freeze
+    image: freeze1.jpg
+    images:
+      - freeze1.jpg
+      - freeze2.jpg
+      - freeze3.jpg
+      - freeze4.jpg
   - title: Perejil Italiano
     image: perejil_italiano1.jpg
     images:
